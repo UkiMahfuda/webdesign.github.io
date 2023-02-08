@@ -1,0 +1,137 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* background: rgb(130, 106, 251); */
+  background: linear-gradient(293.57deg, #114E4E 0%, #052D2D 23.8%, #092727 42.57%, #032c2c 63.76%, #052929 69.62%);
+  
+}
+.container {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+.column .label-checkbox {
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.column .label-menu {
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+.buton {
+  margin-top: 50px;
+}
+.buton input {
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(255, 124, 87, 1);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.buton input:hover {
+    background-color: rgba(255, 124, 87, 0.8);
+}
+.container a {
+  position: absolute;
+  font-size: 2rem;
+  right: 15px;
+  top: 0px;
+  text-decoration: none;
+  color: black;
+  transition: .3s;
+}
+
+.container a:hover{
+  color: #ff7c57;
+}
+
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+}
